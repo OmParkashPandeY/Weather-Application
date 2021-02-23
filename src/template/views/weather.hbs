@@ -1,0 +1,95 @@
+
+{{>header}}
+{{>navbar}}
+
+<!-- ----------------------------------------------------- -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- ----------------------------------------------------- -->
+            
+            <div class="row justify-content-center">
+                        <div class="col-md-12">
+                            <h1 class="weathertext1 ml-1">Weather Information</h1>
+                        </div>
+
+                <div class="col-md-6 my-3 px-5 pb-4 LeftMiddlebox">
+                    
+                    <!-- ----------------------------------------------------- -->
+                    <div class="row">
+                        <div class="col-md-6 mt-2 time">
+                           <span id="date" class="dayclass">Monday</span>
+                        </div>
+                        <div class="col-md-6 mt-2 day">
+                          <span id="time" class="timeclass">
+                            Time
+                          </span>
+                        </div>
+                    </div>
+                    <!-- ----------------------------------------------------- -->
+                    <br>
+                    <form  oninput="GetValue()">
+                        <div class="row">
+                            <div class="col-md-12 p-0 searchbackground">
+                                    <input autocomplete="off" id="InputFieldValue" type="text" class="form-control w-75 float-left" name="city"
+                                        placeholder="Enter your city name">
+                                    <button type="submit" id="SubmitButton" class="btn btn-md p-0 searchiconbutton"><i class="fas fa-search-location searchicon"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- ----------------------------------------------------- -->
+                    <div class="row">
+                        <div class="col-md-12 my-2 WeatherDisplayField" id="maintempfield">
+                         Scanner
+                        </div>
+
+                        <div class="col-md-12 my-2 py-2 WeatherDisplayField2" id="maintempfield">
+                        
+                          <ul class="list-group mt-2">
+                              <li class="list-group-item ">
+                                  <span id="maintemperature">Temperature</span>
+                              </li>
+                              <li class="list-group-item ">
+                                   <span id="tempfh">Temperature FH</span>
+                              </li>
+                              <li class="list-group-item ">
+                                   <span id="citydetails">City Name</span>
+                              </li>
+                              <li class="list-group-item ">
+                                   <span id="statename">State Name</span>
+                              </li>
+                              <li class="list-group-item ">
+                                    <span id="countryname">Country Name</span>
+                              </li>
+                              <li class="list-group-item ">
+                                    <span id="temptype">Temp Type</span>
+                              </li>
+                              <li class="list-group-item ">
+                                    <span id="timedetails">Date & Time</span>
+                              </li>
+                          </ul>
+                        </div>
+  
+                    </div>
+                </div>
+
+                <div class="col-md-6 my-3 px-5 pb-4  RightMiddlebox ">
+                    <!-- ----------------------------------------------------- -->
+
+                    <img src="image/sunraining.png" alt="" class="img-fluid w-100 sunrainimage">
+
+                    <!-- ----------------------------------------------------- -->
+                </div>
+
+            </div>
+            <!-- ----------------------------------------------------- -->
+
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+
+{{>footer}}
+
+
+{{!-- --------------------------------------------------- --}}

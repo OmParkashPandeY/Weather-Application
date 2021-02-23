@@ -1,0 +1,185 @@
+/* ------------------------------------------------------------------------------------------------------ */
+
+    body
+    {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .background
+    {
+    background:linear-gradient(to right,rgb(64, 64, 218) ,rgb(47, 47, 136));
+    }
+
+   .flowericon
+   {
+       color: rgb(255, 255, 255);
+       font-size: 30px;
+       animation: flower;
+       animation-duration:2s;
+       animation-timing-function: linear; 
+       animation-iteration-count: infinite;
+   }
+
+   @keyframes flower {
+        from{
+            transform: rotateZ(0deg);
+        }
+        to
+        {
+            transform: rotateZ(-360deg);
+        }
+   }
+
+   .expresstext
+   {
+       font-size: 30px;
+       font-weight: bold;
+       color:white;
+   }
+   .weathertext
+   {
+       color:rgb(124, 41, 3);
+       font-family: 'lobster',cursive;
+   }
+   .linkcontent
+   {
+       color:white;
+   }
+   .footer
+   {
+       background-color: rgb(7, 7, 94);
+       height: 3rem;
+       text-align: center;
+       width: 100%;
+       margin-top: auto;
+       
+   }
+   .navbar
+   {
+       margin:0px;
+       
+   }
+   .footer p
+   {
+       background-color: rgb(7, 7, 94);
+       line-height:3rem;
+       text-align: center;
+       color: white;   
+   }
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* Weather file css  */
+
+   .weathertext1 
+    {
+    font-family: 'lobster', cursive;
+    color: rgb(20, 6, 104);
+    margin-left: 0px;
+    }   
+
+.RightMiddlebox 
+    {
+    text-align: center;
+    margin-top: 2rem;
+    }
+.LeftMiddlebox 
+    {
+    box-shadow: none;
+    }
+.RightMiddlebox 
+    {
+   text-align: center;
+   box-shadow:none;
+    }
+
+.WeatherDisplayField {
+    height: 8vh;
+    border-radius: 20px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    background-color: rgba(3, 18, 58, 0.705);
+}
+.WeatherDisplayField2 {
+    height: 60vh;
+    border-radius: 20px;
+    color: rgb(31, 29, 29);
+    background-color: rgba(3, 18, 58, 0.705);
+}
+.list-group-item
+{
+    height: 8vh;
+}
+.list-group-item span
+{
+    padding-bottom: 10px;
+}
+.day
+{
+    color: rgb(145, 145, 145);
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.time
+{
+    color: rgb(145, 145, 145);
+    font-weight: bold;
+    font-size: 20px;
+}
+.timeclass
+{
+   float: right;
+   font-size: 20px;
+}
+.temp
+{
+    color:rgb(153, 153, 153)
+}
+.searchbackground
+{
+    border:1px solid gray;
+    border-radius: 20px;
+}
+.searchbackground input
+{
+    border:none;
+    padding-left: 20px;
+     border-radius: 20px;
+    height: 6vh;
+}
+.searchiconbutton
+{
+    width:10%;
+    height: 6vh;
+    float: right;
+    margin-right: 2%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+   
+}
+.searchicon
+{
+    font-size: 24px;
+    margin-right: 10px;
+}
+@media only screen and (max-width:768px)
+{
+    .LeftMiddlebox {box-shadow: 0px 0px 40px rgb(189, 190, 190);}
+    .RightMiddlebox {box-shadow: 0px 0px 40px rgb(189, 190, 190);}
+    .time,.day{text-align:center;}
+     .timeclass{float:none}
+     .WeatherDisplayField{height:6vh}
+}
+@media only screen and (max-width:600px)
+{
+    .LeftMiddlebox {box-shadow: 0px 0px 40px rgb(189, 190, 190);}
+    .RightMiddlebox {box-shadow: 0px 0px 40px rgb(189, 190, 190);}
+    .time,.day{text-align:center;}
+    .timeclass{float:none}
+    .searchiconbutton{margin-right: 5%;}
+     .WeatherDisplayField{height:6vh}
+}
+  
+/* ------------------------------------------------------------------------------------------------------ */

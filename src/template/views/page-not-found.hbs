@@ -1,0 +1,31 @@
+
+<style>
+.pnf-background
+{
+    background-color: rgb(233, 227, 227);
+}
+.pnf-text
+{
+    color:rgb(168, 165, 165);
+    font-size: 4rem;
+}
+</style>
+{{>header}}
+{{>navbar}}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <br><br><br>
+        </div>
+        <div class="col-md-8 m-2 p-5 text-center pnf-background">
+            <h1 class="text-center pnf-text">OOP'S !!</h1>
+            <h3 class="pnf-text">Page not found</h3>
+            <h5>{{ErrorMessage}}</h5>
+            <br>
+            <a href="/"><button class="btn btn-light btn-sm w-25">Click Me for Back</button></a>
+        </div>
+    </div>
+</div>
+
+{{>footer}}
